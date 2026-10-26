@@ -1,0 +1,33 @@
+drawing:
+  unit: mm
+  line_widths:
+    hidden: 0.2
+    visible: 0.5
+    section: 0.8
+
+rules:
+  - name: highlight_hole
+    type: feature
+    match:
+      type: hole
+    action:
+      mark: HOLE
+      color: red
+      layer: FEATURE
+
+  - name: mark_pressure_part
+    type: attribute
+    match:
+      material: steel
+      thickness_gt: 10
+    action:
+      mark: PRESSURE
+      box: true
+
+  - name: default_template
+    type: template
+    match:
+      project: RHI
+    action:
+      title_prefix: RHI-
+      standard_ref: STD-2026

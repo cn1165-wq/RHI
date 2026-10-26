@@ -1,0 +1,6 @@
+pythonocc-core
+cadquery
+ezdxf
+PyYAML
+svgwrite
+reportlab

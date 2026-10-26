@@ -1,0 +1,14 @@
+[project]
+name = "rhi"
+version = "0.1.0"
+description = "Rule-driven 3D model to drawing generation platform"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pythonocc-core",
+  "cadquery",
+  "ezdxf",
+  "PyYAML",
+  "svgwrite",
+  "reportlab",
+]
